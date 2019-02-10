@@ -1,0 +1,36 @@
+.S1 {
+  text-align: center;
+}
+span {
+  color: black;
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+.ClockStyle {
+  background-color: rgba(245, 17, 222, 0.34);
+  margin-top: 5px;
+}
+
+nav {
+
+}
+
+button {
+
+}
+
+h1 {
+  background-color: rgba(245, 17, 222, 0.34);
+  color: black;
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+.Title{
+  color: white;
+  background-color: rgba(108, 218, 185, 0.81);
+  margin: 0px;
+  position: relative;
+  top: -21px;
+}
