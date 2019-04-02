@@ -5,6 +5,7 @@ import './App.css';
 import Clock from "./component/Clock"
 import StopWatch from "./component/StopWatch"
 import Alarm from "./component/Alarm"
+import IconTabs from './uiComponent/tabs'
 
 class App extends Component {
   constructor() {
@@ -43,16 +44,12 @@ class App extends Component {
     // console.log(this.state);
     return (
       <div className="S1">
-        <div className="Title">
-          <h2>
-            This is a Clock App
-          </h2>
-          <nav>
-            <button onClick={this.handleClick_C}>Clock</button>
-            <button onClick={this.handleClick_S}>Stop Watch</button>
-            <button onClick={this.handleClick_A}>Alarm</button>
-          </nav>
-        </div>
+        <IconTabs
+          clockTab={this.handleClick_C}
+          stopwatchTab={this.handleClick_S}
+          alarmTab={this.handleClick_A}
+        />
+
         {this.state.clock? clockComponent : null}
         {this.state.stopWatch? stopWatchComponent : null}
         {this.state.alarm? alarmComponent : null}

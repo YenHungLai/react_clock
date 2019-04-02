@@ -2,6 +2,7 @@
 //  how to play audio or "alarm" the user
 
 import React from 'react';
+import MyButton from '../uiComponent/button'
 
 const style = {
   fontSize: '15px',
@@ -33,6 +34,7 @@ class Alarm extends React.Component {
     this.setState({ minutes: inputMinutes });
     this.setState({ AMPM: inputAMPM });
     console.log('hour: '+this.state);
+    document.querySelector('#result').style.display = 'block'
   }
 
   render() {
@@ -53,23 +55,27 @@ class Alarm extends React.Component {
     }
 
     return (
-      <div>
+      <div className='alarmStyle'>
         <span style={style}>Hour</span>
         <select id="myHour" name="Hour">
           {hours}
         </select>
+
         <span style={style}>Minutes</span>
         <select id="myMinutes"name="Minutes">
           {minutes}
         </select>
+
         <select id="myAMPM" name="AM/PM">
           <option value="AM">AM</option>
           <option value="PM">PM</option>
         </select>
+
         <br />
         <br />
-        <button onClick={this.handleClick}>Set Alarm</button>
-        <h1>
+        <MyButton action={this.handleClick} name='Set Alarm' />
+
+        <h1 id='result' style={{display: 'none'}}>
             You just set an alarm for {this.state.hour}:{this.state.minutes} {this.state.AMPM}
         </h1>
       </div>

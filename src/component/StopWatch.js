@@ -1,4 +1,5 @@
 import React from 'react';
+import MyButton from '../uiComponent/button'
 
 class StopWatch extends React.Component {
   constructor() {
@@ -48,13 +49,14 @@ class StopWatch extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className='stopWatchStyle'>
         <div>
           <span>{this.state.seconds}:</span><span>{this.state.milliseconds}</span>
         </div>
-        <span><button onClick={this.start}>Start</button></span>
-        <span><button onClick={this.stop}>Stop</button></span>
-        <span><button onClick={this.reset}>Reset</button></span>
+        
+        <MyButton action={this.start} name='Start' />
+        <MyButton action={this.stop} name='Stop' />
+        <MyButton action={this.reset} name='Reset' />
       </div>
     )
   }

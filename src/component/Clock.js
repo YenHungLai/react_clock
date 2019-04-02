@@ -22,7 +22,7 @@ class Clock extends React.Component {
       minutes = '0' + minutes;
 
     return (
-      <div className="ClockStyle">
+      <div className="clockStyle">
         <span>{this.state.time.getHours()}:</span>
         <span>{minutes}:</span>
         <span>{this.state.time.getSeconds()} </span>
