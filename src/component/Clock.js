@@ -16,13 +16,15 @@ class Clock extends React.Component {
   }
 
   render() {
-    // console.log(this.props.time.getMilliseconds());
-    // if(this.props.state.clock == true){
-    // console.log("Clock component true");
+    let minutes = this.state.time.getMinutes();
+    // Append 0 if value less than 10
+    if(minutes < 10)
+      minutes = '0' + minutes;
+
     return (
       <div className="ClockStyle">
         <span>{this.state.time.getHours()}:</span>
-        <span>{this.state.time.getMinutes()}:</span>
+        <span>{minutes}:</span>
         <span>{this.state.time.getSeconds()} </span>
         <span>{this.state.time.getMonth() + 1}/</span>
         <span>{this.state.time.getDate()}/</span>
