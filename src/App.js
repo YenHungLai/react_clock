@@ -2,27 +2,19 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import Clock from "./Clock/Clock"
-import StopWatch from "./StopWatch/StopWatch"
-import Alarm from "./Alarm/Alarm"
+import Clock from "./component/Clock"
+import StopWatch from "./component/StopWatch"
+import Alarm from "./component/Alarm"
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      // You can do this???
-      time: new Date(),
       clock: false,
       stopWatch: false,
       alarm: false
     }
-    // Calls newTime() every second(1000ms)
-    setInterval(this.newTime, 1000);
   }
-
-  // componentDidMount() {
-  //   alert("Component mounted!!!")
-  // }
 
   // Event handlers
   handleClick_C = () => {
@@ -43,24 +35,11 @@ class App extends Component {
     )
   }
 
-  // Pass a new Date object to reset time.
-  newTime = () => {
-    this.setState({time: new Date()})
-  }
-
   render() {
-    // let time = new Date()
-    //
-    // // Why doesn't this work????
-    // if(this.state.clock == true) {
-    //   const Component = <Clock time={this.state.time} />
-    //   console.log("Hello")
-    // }
-
     // Pass state to components for Conditional rendering.
-    const clockComponent = <Clock time={this.state.time} state={this.state} />
-    const stopWatchComponent = <StopWatch state={this.state} />
-    const alarmComponent = <Alarm state={this.state} />
+    const clockComponent = <Clock />
+    const stopWatchComponent = <StopWatch />
+    const alarmComponent = <Alarm />
     // console.log(this.state);
     return (
       <div className="S1">
