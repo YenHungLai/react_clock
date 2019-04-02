@@ -1,36 +1,29 @@
 .S1 {
   text-align: center;
 }
+
 span {
   color: black;
   font-family: fantasy;
   font-size: 50px;
 }
 
-.ClockStyle {
-  background-color: rgba(245, 17, 222, 0.34);
-  margin-top: 5px;
+.clockStyle {
+  background-color: rgba(36, 78, 227, 0.76);
+  margin-top: 5rem;
 }
 
-nav {
-
+.stopWatchStyle {
+  margin-top: 5rem;
 }
 
-button {
-
+.alarmStyle {
+  margin-top: 5rem;
 }
 
 h1 {
-  background-color: rgba(245, 17, 222, 0.34);
+  background-color: rgba(36, 78, 227, 0.76);
   color: black;
   font-family: fantasy;
   font-size: 50px;
-}
-
-.Title{
-  color: white;
-  background-color: rgba(108, 218, 185, 0.81);
-  margin: 0px;
-  position: relative;
-  top: -21px;
 }

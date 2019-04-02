@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^2.1.8",
     "terser": "^3.16.1"
   },
   "scripts": {
@@ -24,6 +25,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-react": "^7.12.4",
     "tailwindcss": "^0.7.3"
   }
 }
