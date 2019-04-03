@@ -1,4 +1,5 @@
-// TODO: add alarm logic, alarm audio
+// TODO:
+//    Fix styling, button font, button size...
 
 import React, { Component } from 'react';
 import './App.css';
