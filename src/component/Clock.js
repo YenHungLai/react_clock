@@ -6,8 +6,11 @@ class Clock extends React.Component {
     this.state = {
       time: new Date(),
     };
-    // Refresh the time every second.
-    setInterval(this.newTime, 1000);
+  }
+
+  componentDidMount() {
+      // Refresh the time every second.
+      setInterval(this.newTime, 1000);
   }
 
   // Pass a new Date object to reset time.

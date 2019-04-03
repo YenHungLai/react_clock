@@ -33,9 +33,9 @@ class IconTabs extends React.Component {
           indicatorColor="primary"
           textColor="primary"
         >
-          <Tab onClick={this.props.clockTab} icon={<i class="material-icons">schedule</i>} />
-          <Tab onClick={this.props.stopwatchTab} icon={<i class="material-icons">watch</i>} />
-          <Tab onClick={this.props.alarmTab} icon={<i class="material-icons">alarm</i>} />
+          <Tab onClick={this.props.clockTab} icon={<i className="material-icons">schedule</i>} />
+          <Tab onClick={this.props.stopwatchTab} icon={<i className="material-icons">watch</i>} />
+          <Tab onClick={this.props.alarmTab} icon={<i className="material-icons">alarm</i>} />
         </Tabs>
       </Paper>
     );
